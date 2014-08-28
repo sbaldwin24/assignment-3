@@ -1,0 +1,335 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+body {
+	background: #fdfdfd;
+	color: #121212;
+	font: 87.5% / 24px 'Open Sans', sans-serif;
+	margin: 0;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	text-align: left;
+  	color: #121212;
+  	font: 87.5% / 24px 'Open Sans', sans-serif;
+}
+
+h1 {
+	margin-left:auto;
+  	margin-right:auto;
+	font: bold 40px 'Oswald', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;
+  	width: 50%;
+}
+
+.jeffgordon {
+	padding: 36px 27px;
+	margin-bottom: -10%;
+  	background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  	background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  	background-image: -ms-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  	background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  	background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  	-webkit-background-size: 4px 4px;
+  	-moz-background-size: 4px 4px;
+  	-o-background-size: 4px 4px;
+  	-ms-background-size: 4px 4px;
+  	background-size: 4px 4px;
+}
+
+p {
+	margin-top: 2px;
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 50px auto;
+	width:95% auto;
+}
+
+.nav-menu {
+	position: fixed;
+	float: left;
+	margin-top: 12%;
+	top: 20%;
+}
+
+.nav-menu li:first-child a { border-radius: 0 5px 0 0; }
+.nav-menu li:last-child a { border-radius: 0 0 5px 0; }
+
+.nav-menu a {
+	background: #121212;
+	color: #fff;
+	display: block;
+	height: 50px;
+	font-size: 18px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+	width: 50px;
+}
+
+.nav-menu a:hover span {
+	left: 130%;
+	opacity: 1;
+}
+
+.nav-menu a span {
+	border-radius: 3px;
+	line-height: 24px;
+	left: -100%;
+	margin-top: -16px;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	padding: 4px 8px;
+	position: absolute;
+	-webkit-transition: opacity .3s, left .4s;
+	-moz-transition: opacity .3s, left .4s;
+	-o-transition: opacity .3s, left .4s;
+	-ms-transition: opacity .3s, left .4s;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+  	white-space: nowrap;
+	z-index: 5;
+}
+
+.nav-menu a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+	left: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 8px;
+	z-index: -2;
+}
+
+.nav-menu a[class*="home"]:hover,
+.nav-menu a[class*="home"] span,
+.nav-menu a[class*="home"] span:before { background: #FF0000; }
+
+.nav-menu a[class*="power"]:hover,
+.nav-menu a[class*="power"] span,
+.nav-menu a[class*="power"] span:before { background: #00aced; }
+
+.nav-menu a[class*="flag"]:hover,
+.nav-menu a[class*="flag"] span,
+.nav-menu a[class*="flag"] span:before {
+  background: rgb(252,236,252); /* fallback color */
+  background: rgba(252,236,252,1);
+  background: -moz-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 21%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(21%, rgba(251,166,225,1)), color-stop(51%, rgba(253,137,215,1)), color-stop(100%, rgba(255,124,216,1)));
+  background: -webkit-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 21%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+  background: -o-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 21%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+  background: -ms-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 21%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+  background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 21%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 );
+ }
+
+.nav-menu a[class*="message"]:hover,
+.nav-menu a[class*="message"] span,
+.nav-menu a[class*="message"] span:before {
+  background: rgb(248,80,50); /* fallback color */
+  background: rgba(248,80,50,1);
+  background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 4%, rgba(241,111,92,1) 24%, rgba(240,47,23,1) 69%, rgba(241,46,21,1) 75%, rgba(246,41,12,1) 99%, rgba(231,56,39,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(4%, rgba(248,80,50,1)), color-stop(24%, rgba(241,111,92,1)), color-stop(69%, rgba(240,47,23,1)), color-stop(75%, rgba(241,46,21,1)), color-stop(99%, rgba(246,41,12,1)), color-stop(100%, rgba(231,56,39,1)));
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 4%, rgba(241,111,92,1) 24%, rgba(240,47,23,1) 69%, rgba(241,46,21,1) 75%, rgba(246,41,12,1) 99%, rgba(231,56,39,1) 100%);
+  background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 4%, rgba(241,111,92,1) 24%, rgba(240,47,23,1) 69%, rgba(241,46,21,1) 75%, rgba(246,41,12,1) 99%, rgba(231,56,39,1) 100%);
+  background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 4%, rgba(241,111,92,1) 24%, rgba(240,47,23,1) 69%, rgba(241,46,21,1) 75%, rgba(246,41,12,1) 99%, rgba(231,56,39,1) 100%);
+  background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 4%, rgba(241,111,92,1) 24%, rgba(240,47,23,1) 69%, rgba(241,46,21,1) 75%, rgba(246,41,12,1) 99%, rgba(231,56,39,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+}
+
+/* FORM!!! ^^/ Contact MEEEEE */
+.form-div {
+  	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	background-image: -o-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	-webkit-background-size: 3px 3px;
+  	-moz-background-size: 3px 3px;
+  	-o-background-size: 3px 3px;
+  	-ms-background-size: 3px 3px;
+  	background-size: 3px 3px;
+	padding-left:35px;
+	padding-right:35px;
+	padding-bottom:10px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top: 10%;
+  	margin-bottom: 50px;
+	margin-left: -260px;
+ 	-webkit-border-radius: 7px;
+ 	-moz-border-radius: 7px;
+ 	-o-border-radius: 7px;
+ 	-ms-border-radius: 7px;
+ 	border-radius: 7px;
+ 	-webkit-box-shadow: 44px 36px 18px 6px rgba(0,0,0,1);
+	-moz-box-shadow: 44px 36px 18px 6px rgba(0,0,0,1);
+	-o-box-shadow: 44px 36px 18px 6px rgba(0,0,0,1);
+	-ms-box-shadow: 44px 36px 18px 6px rgba(0,0,0,1);
+	box-shadow: 44px 36px 18px 6px rgba(0,0,0,1);
+}
+
+.form-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgb(0,0,0);
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+.form-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+.focused {
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* FORM Icons  */
+#name {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment {
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue { 
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+  	font-weight:700;
+}
+
+#button-blue:hover {
+	background-color: rgb(0,0,0); /* Backup for color */
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: red;
+}
+
+@media only screen and (max-width: 580px) {
+	.form-div {
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
